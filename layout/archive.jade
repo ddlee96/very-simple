@@ -15,19 +15,19 @@ block main
           h1.label-title=  (page.category || page.tag)
       .post
         // show all categories and tags
-        if !(page.category || page.tag)
-            .all-categories
-              ul.tag-box.list-unstyled
-                for category in site.categories.sort('name').toArray()
-                  li
-                    a(href=url_for(category.path))= category.name
-                      span= category.length
-            .all-tags
-              ul.tag-box.list-unstyled
-                for tag in site.tags.sort('name').toArray()
-                  li
-                    a(href=url_for(tag.path))= tag.name
-                      span= tag.length
+        //- if !(page.category || page.tag)
+        //-     .all-categories
+        //-       ul.tag-box.list-unstyled
+        //-         for category in site.categories.sort('name').toArray()
+        //-           li
+        //-             a(href=url_for(category.path))= category.name
+        //-               span= category.length
+        //-     .all-tags
+        //-       ul.tag-box.list-unstyled
+        //-         for tag in site.tags.sort('name').toArray()
+        //-           li
+        //-             a(href=url_for(tag.path))= tag.name
+        //-               span= tag.length
 
         .post-archive
             //Use lodash to classify posts. See https://lodash.com/docs#groupBy
