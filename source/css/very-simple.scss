@@ -571,12 +571,12 @@ footer#footer {
     //box-sizing: border-box;
     //padding: 0 20px;
     text-align: right;
-    background: #333;
-    color: #CCC;
-    border-top: 2px solid #555;
-    border-bottom: 2px solid #555;
+    // background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    // border-top: 2px solid rgb(255, 255, 255);
+    // border-bottom: 2px solid rgb(255, 255, 255);
     display: flex;
-    box-shadow: 0 0 2px 1px rgba(200, 200, 200, 0.8);
+    // box-shadow: 0 0 2px 1px rgba(200, 200, 200, 0.8);
     transition: background-color .2s ease-in-out;
     margin-bottom: 2em;
 
@@ -585,9 +585,9 @@ footer#footer {
         max-width: 100%;
     }
 
-    &:hover {
-        background: #222;
-    }
+    // &:hover {
+    //     background: #222;
+    // }
 
     .post-time {
         flex: 1;
